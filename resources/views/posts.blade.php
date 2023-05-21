@@ -3,10 +3,12 @@
 @unless(count($posts) == 0)
 @foreach($posts as $post)
 <h2>
-    {{$post['title']}}
+    <a href="/posts/{{$post['id']}}">
+        {{$post['title']}}
+    </a>
 </h2>
 <p>
-    {{$post['description']}}
+    {{$post['caption']}}
 </p>
 @endforeach
 
