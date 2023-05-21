@@ -14,10 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// All posts
 Route::get('/', function () {
-    return view('posts');
+    return view('posts', [
+        'posts' => Post::all()
+    ]);
 });
 
-Route::get('/hello', function() {
-    return 'Hello World';
+// Single post
+Route::get('/posts/{id}', function($id) {
+    return view('post', [
+        'post' => Post::find($id)
+    ]);
 });
