@@ -13,7 +13,7 @@
                     <div class="flex">
                         <img
                             class="hidden w-48 mr-6 md:block"
-                            src="{{asset('images/no-image.png')}}"
+                            src="{{asset('images/cat1.jpg')}}"
                             alt=""
                         />
                         <div>
@@ -25,28 +25,28 @@
                                 <li
                                     class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
                                 >
-                                    <a href="#">Laravel</a>
+                                    <a href="#">Sleepy</a>
                                 </li>
                                 <li
                                     class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
                                 >
-                                    <a href="#">API</a>
+                                    <a href="#">Cute</a>
                                 </li>
                                 <li
                                     class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
                                 >
-                                    <a href="#">Backend</a>
+                                    <a href="#">Whiskers</a>
                                 </li>
                                 <li
                                     class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
                                 >
-                                    <a href="#">Vue</a>
+                                    <a href="#">Big Eyes</a>
                                 </li>
                             </ul>
-                            <div class="text-lg mt-4">
+                            {{-- <div class="text-lg mt-4">
                                 <i class="fa-solid fa-location-dot"></i> Boston,
                                 MA
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

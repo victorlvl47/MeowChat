@@ -13,7 +13,7 @@
     >
         <img
             class="w-48 mr-6 mb-6"
-            src="{{asset('images/no-image.png')}}"
+            src="{{asset('images/cat1.jpg')}}"
             alt=""
         />
 
@@ -23,22 +23,22 @@
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">Laravel</a>
+                <a href="#">Sleepy</a>
             </li>
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">API</a>
+                <a href="#">Cute</a>
             </li>
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">Backend</a>
+                <a href="#">Whiskers</a>
             </li>
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">Vue</a>
+                <a href="#">Big eyes</a>
             </li>
         </ul>
         {{-- <div class="text-lg my-4">
