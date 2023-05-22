@@ -9,10 +9,10 @@
 
             <div class="z-10">
                 <h1 class="text-6xl font-bold uppercase text-white">
-                    Lara<span class="text-black">Gigs</span>
+                    <span style="color:#FFC0CB">Meow</span><span style="color:#FFA500">Chat</span>
                 </h1>
                 <p class="text-2xl text-gray-200 font-bold my-4">
-                    Find or post Laravel jobs & projects
+                    Connect with fellow cat lovers and share purr-fect moments of your feline companions in this social network for cat enthusiasts
                 </p>
                 <div>
                     <a
