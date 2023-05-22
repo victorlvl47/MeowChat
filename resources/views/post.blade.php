@@ -55,6 +55,7 @@
                 <a
                     href="#"
                     class="block bg-laravel text-white mt-6 py-2 rounded-xl hover:opacity-80"
+                    style="background-color: #eab308;"
                     ><i class="fa-solid fa-share"></i>
                     Share</a
                 >
