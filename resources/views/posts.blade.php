@@ -2,6 +2,9 @@
 
 @section('content')
 
+@include('partials._hero')
+@include('partials._search')
+
 <div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
 @unless(count($posts) == 0)
 @foreach($posts as $post)
@@ -15,7 +18,7 @@
                         />
                         <div>
                             <h3 class="text-2xl">
-                                <a href="show.html">{{$post->title}}</a>
+                                <a href="/posts/{{$post->id}}">{{$post->title}}</a>
                             </h3>
                             <div class="text-xl font-bold mb-4">TODO: username here</div>
                             <ul class="flex">
