@@ -50,9 +50,10 @@
     @yield('content')
     </main>
     <footer
-    class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center"
+    class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center" 
+    style="background-color: #800080;"
 >
-    <p class="ml-2">Copyright &copy; 2023, All Rights reserved</p>
+    <p class="ml-2">MeowChat 2023</p>
 
     <a
         href="create.html"
