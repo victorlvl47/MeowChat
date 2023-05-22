@@ -20,28 +20,7 @@
 
         <h3 class="text-2xl mb-2">{{$post->title}}</h3>
         <div class="text-xl font-bold mb-4">TODO: username here</div>
-        <ul class="flex" style="margin-bottom:25px;">
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">Sleepy</a>
-            </li>
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">Cute</a>
-            </li>
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">Whiskers</a>
-            </li>
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">Big eyes</a>
-            </li>
-        </ul>
+        <x-post-tags :tagsCsv="$post->tags" />
         {{-- <div class="text-lg my-4">
             <i class="fa-solid fa-location-dot"></i> Daytona, FL
         </div> --}}
