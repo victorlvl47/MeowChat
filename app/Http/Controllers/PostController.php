@@ -10,7 +10,7 @@ class PostController extends Controller
     // Show all posts
     public function index() {
         return view('posts.index', [
-            'posts' => Post::latest()->filter(request(['tag']))->get()
+            'posts' => Post::latest()->filter(request(['tag', 'search']))->get()
         ]);
     }
 
