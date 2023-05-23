@@ -30,5 +30,8 @@ Route::get('/', [PostController::class, 'index']);
 // Show Create Form
 Route::get('/posts/create', [PostController::class, 'create']);
 
+// Store Post Data
+Route::post('/posts', [PostController::class, 'store']);
+
 // Single post
 Route::get('/posts/{post}', [PostController::class, 'show']);

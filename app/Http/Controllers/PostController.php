@@ -25,4 +25,20 @@ class PostController extends Controller
     public function create() {
         return view('posts.create');
     }
+
+    // Store Post Data
+    public function store(Request $request) {
+        // dd($request->all());
+
+        $formFields = $request->validate([
+            'title' => 'required', 
+            // 'company' => ['required', Rule::unique('listings', 'company')]
+            'tags' => 'required', 
+            'caption' => 'required'
+        ]);
+
+        Post::create($formFields);
+
+        return redirect('/');
+    }
 }

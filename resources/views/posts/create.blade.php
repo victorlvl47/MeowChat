@@ -7,7 +7,8 @@
     <p class="mb-4">Let's unleash the kitty magic and create an adorable post featuring your fabulous feline friend!</p>
 </header>
 
-<form action="">
+<form method="POST" action="/posts">
+    @csrf
     {{-- <div class="mb-6">
         <label
             for="company"
@@ -31,6 +32,10 @@
             name="title"
             placeholder="Example: Mr. Whiskers taking a nap"
         />
+
+        @error('title')
+            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+        @enderror
     </div>
 
     {{-- <div class="mb-6">
@@ -82,9 +87,13 @@
             name="tags"
             placeholder="Example: Sleepy,Cute,Funny,etc"
         />
+
+        @error('tags')
+            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+        @enderror
     </div>
 
-    <div class="mb-6">
+    {{-- <div class="mb-6">
         <label for="post_image" class="inline-block text-lg mb-2">
             Your Purrfect Cat-tastic Pic Here!
         </label>
@@ -93,7 +102,7 @@
             class="border border-gray-200 rounded p-2 w-full"
             name="post_image"
         />
-    </div>
+    </div> --}}
 
     <div class="mb-6">
         <label
@@ -108,6 +117,9 @@
             rows="10"
             placeholder="Give Your Cat's Moment in the Spotlight a Pawsome Caption!"
         ></textarea>
+        @error('caption')
+            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+        @enderror
     </div>
 
     <div class="mb-6">
