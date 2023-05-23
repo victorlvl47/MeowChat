@@ -27,5 +27,8 @@ use App\Http\Controllers\PostController;
 // All posts
 Route::get('/', [PostController::class, 'index']);
 
+// Show Create Form
+Route::get('/posts/create', [PostController::class, 'create']);
+
 // Single post
 Route::get('/posts/{post}', [PostController::class, 'show']);

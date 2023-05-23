@@ -56,7 +56,7 @@
     <p class="ml-2">MeowChat 2023</p>
 
     <a
-        href="create.html"
+        href="/posts/create"
         class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
         >Make a post</a
     >
