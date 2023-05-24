@@ -10,7 +10,7 @@ class PostController extends Controller
     // Show all posts
     public function index() {
         return view('posts.index', [
-            'posts' => Post::latest()->filter(request(['tag', 'search']))->get()
+            'posts' => Post::latest()->filter(request(['tag', 'search']))->paginate(6)
         ]);
     }
 
@@ -39,6 +39,6 @@ class PostController extends Controller
 
         Post::create($formFields);
 
-        return redirect('/')->with('message', 'Listing created successfully!');
+        return redirect('/')->with('message', 'Post created successfully!');
     }
 }
