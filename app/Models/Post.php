@@ -9,6 +9,8 @@ class Post extends Model
 {
     use HasFactory;
 
+    // Set Model::unguard(); in App > Providers > AppserviceProvider.php
+
     public function scopeFilter($query, array $filters) {
         if($filters['tag'] ?? false) {
             $query->where('tags', 'like', '%' . request('tag') . '%');
