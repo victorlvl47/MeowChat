@@ -39,6 +39,6 @@ class PostController extends Controller
 
         Post::create($formFields);
 
-        return redirect('/');
+        return redirect('/')->with('message', 'Listing created successfully!');
     }
 }

@@ -61,6 +61,9 @@
         >Make a post</a
     >
 </footer>
+
+<x-flash-message/>
+
 </body>
 </html>
 </body>
