@@ -31,7 +31,9 @@
             class="border border-gray-200 rounded p-2 w-full"
             name="title"
             placeholder="Example: Mr. Whiskers taking a nap"
+            value="{{old('title')}}"
         />
+
 
         @error('title')
             <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -86,6 +88,7 @@
             class="border border-gray-200 rounded p-2 w-full"
             name="tags"
             placeholder="Example: Sleepy,Cute,Funny,etc"
+            value="{{old('tags')}}"
         />
 
         @error('tags')
@@ -116,7 +119,8 @@
             name="caption"
             rows="10"
             placeholder="Give Your Cat's Moment in the Spotlight a Pawsome Caption!"
-        ></textarea>
+        >{{old('caption')}}</textarea>
+
         @error('caption')
             <p class="text-red-500 text-xs mt-1">{{$message}}</p>
         @enderror
