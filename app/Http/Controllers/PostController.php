@@ -47,4 +47,31 @@ class PostController extends Controller
 
         return redirect('/')->with('message', 'Post created successfully!');
     }
+
+    // Show Edit Form
+    public function edit(Post $post) {
+        return view('posts.edit', ['post' => $post]);
+    }
+
+    // Update Post data
+    public function update(Request $request, Post $post) {
+        // dd($request->all());
+
+        $formFields = $request->validate([
+            'title' => 'required', 
+            // 'company' => ['required', Rule::unique('listings', 'company')]
+            'tags' => 'required', 
+            'caption' => 'required'
+        ]);
+
+        // Check if an image was uploaded
+        if($request->hasFile('post_image'))
+        {
+            $formFields['image_path'] = $request->file('post_image')->store('posts_images', 'public');
+        }
+
+        $post->update($formFields);
+
+        return back()->with('message', 'Post updated successfully!');
+    }
 }

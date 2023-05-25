@@ -27,11 +27,17 @@ use App\Http\Controllers\PostController;
 // All posts
 Route::get('/', [PostController::class, 'index']);
 
-// Show Create Form
+// Show Create Post Form
 Route::get('/posts/create', [PostController::class, 'create']);
 
 // Store Post Data
 Route::post('/posts', [PostController::class, 'store']);
+
+// Show Edit Post
+Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
+
+// Update Post
+Route::put('/posts/{post}', [PostController::class, 'update']);
 
 // Single post
 Route::get('/posts/{post}', [PostController::class, 'show']);
