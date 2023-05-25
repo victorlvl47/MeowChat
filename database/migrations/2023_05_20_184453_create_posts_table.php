@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            // An image required if uncomment!
+            // $table->string('image_path');
+            // An image is no longer required if uncomment!
+            $table->string('image_path')->nullable();
             $table->string('tags');
             $table->longText('caption');
             $table->timestamps();

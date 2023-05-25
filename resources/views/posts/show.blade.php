@@ -12,7 +12,7 @@
     >
         <img
             class="w-48 mr-6 mb-6"
-            src="{{asset('images/cat1.jpg')}}"
+            src="{{$post->image_path ? asset('storage/' . $post->image_path) : asset('images/cat1.jpg')}}"
             alt=""
         />
 

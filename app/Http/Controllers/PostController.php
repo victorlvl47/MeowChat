@@ -37,6 +37,12 @@ class PostController extends Controller
             'caption' => 'required'
         ]);
 
+        // Check if an image was uploaded
+        if($request->hasFile('post_image'))
+        {
+            $formFields['image_path'] = $request->file('post_image')->store('posts_images', 'public');
+        }
+
         Post::create($formFields);
 
         return redirect('/')->with('message', 'Post created successfully!');

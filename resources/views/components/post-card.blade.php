@@ -5,7 +5,7 @@
     <div class="flex">
         <img
             class="hidden w-48 mr-6 md:block"
-            src="{{asset('images/cat1.jpg')}}"
+            src="{{$post->image_path ? asset('storage/' . $post->image_path) : asset('images/cat1.jpg')}}"
             alt=""
         />
         <div>
