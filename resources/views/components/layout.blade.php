@@ -35,14 +35,14 @@
             <ul class="flex space-x-6 mr-6 text-lg">
                 @auth
                 <li>
-                    <span class="fant-bold uppercase">
+                    <span class="font-bold uppercase">
                         Welcome {{auth()->user()->name}}
                     </span>
                 </li>
                 <li>
                     <a href="/posts/manage" class="hover:text-laravel"
                         ><i class="fa-solid fa-arrow-right-to-bracket"></i>
-                        Manage Listings</a
+                        Manage Posts</a
                     >
                 </li>
                 <li>
