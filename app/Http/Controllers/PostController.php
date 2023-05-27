@@ -43,6 +43,8 @@ class PostController extends Controller
             $formFields['image_path'] = $request->file('post_image')->store('posts_images', 'public');
         }
 
+        $formFields['user_id'] = auth()->id();
+
         Post::create($formFields);
 
         return redirect('/')->with('message', 'Post created successfully!');
