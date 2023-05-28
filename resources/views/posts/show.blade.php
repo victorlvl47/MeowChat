@@ -30,20 +30,19 @@
             <div class="text-lg space-y-6">
                 {{$post->caption}}
 
-                <a
-                    href="#"
+                <button
+                    style="background-color: #eab308; width:100%;" 
                     class="block bg-laravel text-white mt-6 py-2 rounded-xl hover:opacity-80"
-                    style="background-color: #eab308;"
-                    ><i class="fa-solid fa-share"></i>
-                    Share</a
                 >
+                    <i class="fa-solid fa-share"></i> Share
+                </button>
 
-                <a
-                    href="#"
-                    target="_blank"
+                <button
+                    style="width:100%;" 
                     class="block bg-black text-white py-2 rounded-xl hover:opacity-80"
-                    ><i class="fa-solid fa-copy"></i> Copy Link</a
                 >
+                    <i class="fa-solid fa-copy"></i> Copy Link
+                </button>
             </div>
         </div>
     </div>
