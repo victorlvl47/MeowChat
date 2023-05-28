@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(4)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
@@ -23,12 +23,14 @@ class DatabaseSeeder extends Seeder
 
         $user = User::factory()->create([
             'name' => 'John Doe', 
+            'username' => 'jjdoe_catz', 
             'email' => 'john@gmail.com', 
             'password' => '12345678'
         ]);
 
         $user_jane = User::factory()->create([
             'name' => 'Jane Doe', 
+            'username' => 'janethecatprincess', 
             'email' => 'jane@gmail.com', 
             'password' => '12345678'
         ]);

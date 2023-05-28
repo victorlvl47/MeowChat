@@ -46,6 +46,24 @@
         </div>
 
         <div class="mb-6">
+            <label for="username" class="inline-block text-lg mb-2">
+                Username
+            </label>
+            <input
+                type="text"
+                class="border border-gray-200 rounded p-2 w-full"
+                name="username"
+                value="{{old('username')}}"
+            />
+
+            @error('username')
+                <p class="text-red-500 text-xs mt-1">
+                    {{$message}}
+                </p>
+            @enderror
+        </div>
+
+        <div class="mb-6">
             <label
                 for="password"
                 class="inline-block text-lg mb-2"
