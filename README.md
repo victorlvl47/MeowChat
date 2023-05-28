@@ -17,7 +17,7 @@ Una red social para entusiastas de los gatos. Los usuarios pueden compartir foto
 ![MeowChat edit post](/public/images/edit-post.png "MeowChat edit post")
 
 ### Administrar posts
-![MeowChat manage posts](/public/images/manage-posts.png "MeowChat manage posts")
+![MeowChat manage posts](/public/images/manage.png "MeowChat manage posts")
 
 ### Crear un usuario
 ![MeowChat create user](/public/images/create-user.png "MeowChat create user")
