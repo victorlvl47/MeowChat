@@ -60,6 +60,15 @@ php artisan serve
 ```
 Abra su navegador web y navegue a la URL especificada (generalmente http://localhost:8000) para acceder a la aplicación MeowChat.
 
+## Usuarios de prueba
+
+Puedes agregar y editar estos usuarios en el archivo `database > seeders > DatabaseSeeder.php`.
+
+|   name   | username |       email       |   password   |
+|----------|----------|------------------|--------------|
+| John Doe | jjdoe_catz  | john@gmail.com | 12345678       |
+| Jane Doe | janethecatprincess | jane@gmail.com | 12345678    |
+
 
 
 ## Vistas
