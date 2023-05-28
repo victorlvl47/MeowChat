@@ -16,11 +16,15 @@
                     Connect with fellow cat lovers and share purr-fect moments of your feline companions in this social network for cat enthusiasts
                 </p>
                 <div>
-                    <a
-                        href="register.html"
-                        class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
-                        >Sign Up to Post</a
-                    >
+                    @auth
+                        {{-- You are login! --}}
+                    @else
+                        <a
+                            href="/register"
+                            class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
+                            >Sign Up to Post</a
+                        >
+                    @endauth
                 </div>
             </div>
         </section>
