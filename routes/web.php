@@ -25,7 +25,7 @@ use App\Http\Controllers\UserController;
 // update - Update post
 // destroy - Delete post  
 
-// All posts
+// All posts.
 Route::get('/', [PostController::class, 'index']);
 
 // Show Create Post Form
