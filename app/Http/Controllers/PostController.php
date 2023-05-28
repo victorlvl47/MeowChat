@@ -59,6 +59,11 @@ class PostController extends Controller
     public function update(Request $request, Post $post) {
         // dd($request->all());
 
+        // Make sure the logged in user is the owner of the post
+        if($post->user_id != auth()->id()) {
+            abort(403, 'Unathorized Action');
+        }   
+
         $formFields = $request->validate([
             'title' => 'required', 
             // 'company' => ['required', Rule::unique('listings', 'company')]
@@ -79,6 +84,12 @@ class PostController extends Controller
 
     // Delete post
     public function destroy(Post $post) {
+        
+        // Make sure the logged in user is the owner of the post
+        if($post->user_id != auth()->id()) {
+            abort(403, 'Unathorized Action');
+        }  
+
         $post->delete();
 
         return redirect('/')->with('message', 'Post deleted successfully!');
