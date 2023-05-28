@@ -83,4 +83,9 @@ class PostController extends Controller
 
         return redirect('/')->with('message', 'Post deleted successfully!');
     }
+
+    // Manage Posts
+    public function manage() {
+        return view('posts.manage', ['posts' => auth()->user()->posts()->get()]);
+    }
 }
