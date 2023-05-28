@@ -17,7 +17,7 @@
         />
 
         <h3 class="text-2xl mb-2">{{$post->title}}</h3>
-        <div class="text-xl font-bold mb-4">TODO: username here</div>
+        <div class="text-xl font-bold mb-4">By: {{$post->user->username}}</div>
         <x-post-tags :tagsCsv="$post->tags" />
         {{-- <div class="text-lg my-4">
             <i class="fa-solid fa-location-dot"></i> Daytona, FL
